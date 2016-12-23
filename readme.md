@@ -27,7 +27,7 @@ ASP.Net Web API 2
     
     Note: Mode 1- Test
                2- Production
-        if Mode is Test, then venue names returns prefix "T-" sign
+        if Mode is Test, then venue names returns with the "T-" prefix
         
     
 •searchVenue Service:
