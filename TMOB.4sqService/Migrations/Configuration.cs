@@ -29,26 +29,27 @@ namespace TMOB._4sqService.Migrations
                     ID = 1,
                     Name = "Bahar Market",
                     Country = "Turkey",
-                    City = "Ýstanbul",
+                    City = "Sakarya",
                     Location = new Locations { Latitude = 40.99, Longitude = 28.83 },
                     PeopleHereNow = 24,
-                    URL = "http://www.google.com",
                     Likes = 24,
                     Like = true,
                     Dislike = false,
+                    Tags = "donuts"
                 },
                 new Venue()
                 {
                     ID = 2,
                     Name = "TMob Mobile Technology",
                     Country = "Turkey",
-                    City = "Ýstanbul",
+                    City = "istanbul",
                     Location = new Locations { Latitude = 41.09, Longitude = 29.00 },
                     PeopleHereNow = 56,
                     URL = "http://www.thinksmobility.com",
                     Likes = 108,
                     Like = true,
                     Dislike = false,
+                    Tags="donuts"
                 },
                 new Venue()
                 {
@@ -62,6 +63,7 @@ namespace TMOB._4sqService.Migrations
                     Likes = 3200,
                     Like = true,
                     Dislike = false,
+                    Tags="Damn"
                 }
                 );
 

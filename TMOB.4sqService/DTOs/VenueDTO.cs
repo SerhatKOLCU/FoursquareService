@@ -1,8 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using TMOB._4sqService.Models;
 
-namespace TMOB._4sqService.Models
+namespace TMOB._4sqService.DTOs
 {
-    public class Venue
+    public class VenueDTO
     {
         public int ID { get; set; }
 
@@ -15,12 +19,6 @@ namespace TMOB._4sqService.Models
         public int Likes { get; set; }
         public bool Like { get; set; }
         public bool Dislike { get; set; }
-        public string Tags { get; set; }
-    }
-
-    public class Locations
-    {
-        public double Latitude { get; set; }
-        public double Longitude { get; set; }
+        public static Modes Mode { get; set; }
     }
 }

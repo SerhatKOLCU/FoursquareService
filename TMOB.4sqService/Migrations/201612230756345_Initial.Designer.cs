@@ -13,7 +13,7 @@ namespace TMOB._4sqService.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201612222235337_Initial"; }
+            get { return "201612230756345_Initial"; }
         }
         
         string IMigrationMetadata.Source

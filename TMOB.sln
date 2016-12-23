@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMOB.4sqService", "TMOB.4sqService\TMOB.4sqService.csproj", "{C7BF0299-7EC7-4D55-B19E-DE55B318A436}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMOB.ClientSide", "TMOB.ClientSide\TMOB.ClientSide.csproj", "{C74C05AE-1C3A-4FCF-B477-BB8CDE5DE4AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C7BF0299-7EC7-4D55-B19E-DE55B318A436}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7BF0299-7EC7-4D55-B19E-DE55B318A436}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7BF0299-7EC7-4D55-B19E-DE55B318A436}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C74C05AE-1C3A-4FCF-B477-BB8CDE5DE4AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C74C05AE-1C3A-4FCF-B477-BB8CDE5DE4AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C74C05AE-1C3A-4FCF-B477-BB8CDE5DE4AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C74C05AE-1C3A-4FCF-B477-BB8CDE5DE4AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

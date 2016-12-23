@@ -17,12 +17,11 @@ namespace TMOB._4sqService.Models
     
         public TMOB_4sqServiceContext() : base("name=TMOB_4sqServiceContext")
         {
+            this.Database.Log = s => System.Diagnostics.Debug.WriteLine(s);
         }
 
-        public System.Data.Entity.DbSet<TMOB._4sqService.Models.Transaction> Transactions { get; set; }
         public System.Data.Entity.DbSet<TMOB._4sqService.Models.Device> Devices { get; set; }
         public System.Data.Entity.DbSet<TMOB._4sqService.Models.Venue> Venues { get; set; }
 
-        public System.Data.Entity.DbSet<TMOB._4sqService.Models.SearchVenue> SearchVenues { get; set; }
     }
 }

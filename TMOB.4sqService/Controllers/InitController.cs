@@ -9,6 +9,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
+using TMOB._4sqService.DTOs;
 using TMOB._4sqService.Models;
 
 namespace TMOB._4sqService.Controllers
@@ -23,16 +24,23 @@ namespace TMOB._4sqService.Controllers
         /// </summary>
         /// <param name="init"></param>
         /// <returns></returns>
-        [ResponseType(typeof(Transaction))]
-        public async Task<IHttpActionResult> Initialize(Init init)
+        [ResponseType(typeof(InitDTO))]
+        public async Task<IHttpActionResult> Init(ReqInit init)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
-            Init.needsUpdate = checkVersion(init.transactionInfo.ApplicationVersion);
-            return Ok(Init.needsUpdate);
-            //return Ok(init.needsUpdate);
+            InitDTO dto = new InitDTO();
+
+            if (init.transactionInfo.Mode == Modes.Test)
+            {
+                VenueDTO.Mode = init.transactionInfo.Mode;
+            }
+
+            dto.needsUpdate = checkVersion(init.transactionInfo.ApplicationVersion);
+
+            return Ok(dto);
         }
 
         bool checkVersion(string version)
@@ -65,14 +73,5 @@ namespace TMOB._4sqService.Controllers
             else { return true; }
         }
 
-
-        void checkMode(Modes mode)
-        {
-            if (mode == Modes.Test)
-            {
-                Venue venue = new Venue();
-                venue.Name = "T" + venue.Name;
-            }
-        }
     }
 }

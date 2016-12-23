@@ -9,7 +9,6 @@ namespace TMOB._4sqService.Models
     public enum Modes { Test = 1, Production = 2 }
     public class Transaction
     {
-        [Key]
         public string ApplicationVersion { get; set; }
         public Modes Mode { get; set; }
 
